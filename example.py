@@ -15,7 +15,8 @@ tablica = np.genfromtxt(plik, delimiter=',', skip_header = 4)
 
 ## tutaj pętla i przeliczenie do wszystkich układów .....
 
-
+for i in tablica:
+    phi, lam, h = geo.xyz2plh(i[0], i[1], i[2])
 
 
 # zapis: https://docs.scipy.org/doc/numpy-1.15.0/reference/generated/numpy.savetxt.html
